@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Мария · Продуктовый дизайнер</title>
+    <meta
+      name="description"
+      content="Мария, продуктовый дизайнер. Проектирую интерфейсы на основе данных для proptech, fashion-tech и сложных B2B-платформ."
+    />
+
+    <meta property="og:title" content="Мария · Продуктовый дизайнер" />
+    <meta property="og:description" content="Продуктовый дизайнер. Исследования, метрики, дизайн-системы." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- fixed background grain + vignette, never scrolls, no pointer cost -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ============================ HERO ============================ -->
+    <header class="hero" id="top">
+      <p class="hero__tagline">
+        Продуктовый дизайнер, создаю интерфейсы<br />
+        на основе данных, исследований и метрик.
+      </p>
+      <div class="hero__bottom">
+        <h1 class="hero__name"><span class="hero__name-first">Мария</span><span class="hero__name-last">Маркова.</span></h1>
+        <div class="hero__bar">
+          <div class="hero__bar-links">
+            <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+            <span class="hero__bar-sep">/</span>
+            <a href="https://t.me/mmrialle" target="_blank" rel="noopener">Telegram</a>
+          </div>
+          <nav class="hero__bar-nav">
+            <a href="#about">Обо мне</a>
+            <a href="#experience">Опыт</a>
+            <a href="#results">Результаты</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- floating dock navigation (matches the reference bottom bar) -->
+    <nav class="dock" aria-label="Основная навигация">
+      <a class="dock__brand" href="#top" aria-label="В начало">Мария Маркова</a>
+      <span class="dock__divider" aria-hidden="true"></span>
+      <ul class="dock__links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#cases">Кейсы</a></li>
+        <li><a href="#experience">Опыт</a></li>
+      </ul>
+      <a class="btn btn--solid dock__cta" href="#contact">Связаться</a>
+    </nav>
+
+    <main>
+      <!-- ============================ ABOUT ============================ -->
+      <section class="about" id="about">
+        <div class="shell about__inner">
+          <div class="about__left">
+            <p class="about__statement reveal">
+              Соединяю глубинные исследования и&nbsp;продуктовую аналитику, чтобы интерфейсы росли в&nbsp;метриках, а&nbsp;не только в&nbsp;макетах.
+            </p>
+
+            <div class="metrics" role="list">
+              <div class="metric reveal" role="listitem" style="--i: 0">
+                <span class="metric__num" data-target="19.1" data-decimals="1" data-prefix="+" data-suffix="%">+0%</span>
+                <span class="metric__label">CR в переход на продуктовую страницу</span>
+              </div>
+              <div class="metric reveal" role="listitem" style="--i: 1">
+                <span class="metric__num" data-target="4" data-prefix="$" data-suffix="M+">$0M+</span>
+                <span class="metric__label">портфель проектов на рынке ОАЭ</span>
+              </div>
+              <div class="metric reveal" role="listitem" style="--i: 2">
+                <span class="metric__num metric__num--word">Awwwards</span>
+                <span class="metric__label">награда за спроектированный сайт</span>
+              </div>
+              <div class="metric reveal" role="listitem" style="--i: 3">
+                <span class="metric__num" data-target="6" data-suffix=" лет">0 лет</span>
+                <span class="metric__label">в e-com, fintech, proptech и fashion-tech</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__photo-wrap reveal" style="--i: 1">
+            <div class="about__photo">
+              <img src="IMG_5476.JPG" alt="Мария Маркова" />
+            </div>
+            <p class="about__photo-caption">Senior Product Designer с шестилетним опытом в e-com, fintech, proptech и fashion-tech.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ CASES ============================ -->
+      <section class="cases" id="cases">
+        <div class="shell cases__head">
+          <h2 class="cases__title">Кейсы</h2>
+        </div>
+        <div class="cases__stack">
+          <article class="case-card" style="--i: 0">
+            <div class="case-card__inner shell">
+              <div class="case-card__img">
+                <img src="Mira.png" alt="Mira Developments" />
+              </div>
+              <div class="case-card__body">
+                <span class="case-card__num">01 / 03</span>
+                <h3 class="case-card__name">Mira Developments</h3>
+                <p class="case-card__desc">
+                  Редизайн продуктовой страницы с каскадом A/B-тестов на ключевых страницах. Результат: +19.1% CR в переход.
+                </p>
+                <div class="case-card__tags"><span>Proptech</span><span>UX/UI</span><span>A/B-тесты</span></div>
+                <a class="case-card__btn" href="#">Читать подробнее →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card" style="--i: 1">
+            <div class="case-card__inner shell">
+              <div class="case-card__img">
+                <img src="Soda.png" alt="Sodamoda" />
+              </div>
+              <div class="case-card__body">
+                <span class="case-card__num">02 / 03</span>
+                <h3 class="case-card__name">Sodamoda</h3>
+                <p class="case-card__desc">
+                  Приложение маркетплейса с нуля по HIG и Material Design. +1.8% CR в добавление в корзину из карточки товара.
+                </p>
+                <div class="case-card__tags"><span>Fashion-tech</span><span>Mobile</span><span>HIG</span></div>
+                <a class="case-card__btn" href="#">Читать подробнее →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card" style="--i: 2">
+            <div class="case-card__inner shell">
+              <div class="case-card__img">
+                <img src="Powder.jpg" alt="B2B-платформа" />
+              </div>
+              <div class="case-card__body">
+                <span class="case-card__num">03 / 03</span>
+                <h3 class="case-card__name">B2B-платформа</h3>
+                <p class="case-card__desc">
+                  Сложная платформа с ролями и ограничениями. Проектирование от глубинных исследований до сдачи разработке.
+                </p>
+                <div class="case-card__tags"><span>B2B</span><span>Platform</span><span>Research</span></div>
+                <a class="case-card__btn" href="#">Читать подробнее →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================ SUPERPOWER ============================ -->
+      <section class="superpower" id="superpower">
+        <div class="shell superpower__inner">
+          <div class="superpower__text reveal">
+            <span class="superpower__label">суперсила</span>
+            <h2 class="superpower__heading">Студийный<br /><em>визуал</em></h2>
+            <p class="superpower__body">Бэкграунд продуктового агентства. Создаю качественный продукт как с нуля, так и по готовой дизайн-системе.</p>
+          </div>
+          <div class="superpower__visual reveal" style="--i: 1" aria-hidden="true">
+            <div class="superpower__ring superpower__ring--1"></div>
+            <div class="superpower__ring superpower__ring--2"></div>
+            <div class="superpower__ring superpower__ring--3"></div>
+            <div class="superpower__core">
+              <span>данные</span>
+              <span>+ дизайн</span>
+              <span>= рост</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ EXPERIENCE ============================ -->
+      <section class="exp" id="experience">
+        <div class="shell">
+          <h2 class="section__head reveal">Опыт</h2>
+
+          <ol class="timeline">
+            <li class="role reveal">
+              <div class="role__meta">
+                <span class="role__years">2&nbsp;года 1&nbsp;месяц</span>
+                <span class="role__tag">Senior Product Designer</span>
+              </div>
+              <div class="role__body">
+                <h3 class="role__company">Mira Developments</h3>
+                <p class="role__about">
+                  Международная proptech и development-компания с портфелем премиальных проектов для рынка ОАЭ стоимостью более&nbsp;$4M.
+                </p>
+                <ul class="wins">
+                  <li><b>+0.16%</b> CR в заявку на покупку недвижимости в UltraLux-сегменте через каскад A/B-тестов ключевых страниц.</li>
+                  <li><b>+19.1%</b> CR в переход на продуктовую страницу после запуска блога.</li>
+                </ul>
+                <ul class="tasks">
+                  <li>Глубинные интервью, UX и коридорные исследования на прототипах</li>
+                  <li>Развитие и поддержка дизайн-системы</li>
+                  <li>Гипотезы на данных Amplitude и Heap с продуктовой командой</li>
+                  <li>Работа с разработкой от проектирования до контроля реализации</li>
+                  <li>Защита решений перед C-Level и стейкхолдерами</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="role reveal">
+              <div class="role__meta">
+                <span class="role__years">1&nbsp;год 1&nbsp;месяц</span>
+                <span class="role__tag">Product Designer</span>
+              </div>
+              <div class="role__body">
+                <h3 class="role__company">Sodamoda</h3>
+                <p class="role__about">Международный fashion-tech и маркетплейс премиум-сегмента для женщин в СНГ и MENA.</p>
+                <ul class="wins">
+                  <li>
+                    <b>+0.9%</b> и <b>+1.8%</b> CR в добавление товара в корзину из каталога и карточки товара через редизайн на данных исследований.
+                  </li>
+                  <li>С нуля спроектировала B2B-платформу для лёгкой интеграции брендов в маркетплейс.</li>
+                  <li>С нуля спроектировала и запустила приложение маркетплейса по HIG и Material Design на рынках СНГ и MENA.</li>
+                </ul>
+                <ul class="tasks">
+                  <li>Редизайн сайта маркетплейса</li>
+                  <li>Гипотезы на основе данных с продуктовой командой</li>
+                  <li>Интервью с пользователями и USM для разных сегментов</li>
+                  <li>Работа с разработкой на всех этапах жизненного цикла фичи</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="role reveal">
+              <div class="role__meta">
+                <span class="role__years">3&nbsp;года 2&nbsp;месяца</span>
+                <span class="role__tag">UX/UI Designer</span>
+              </div>
+              <div class="role__body">
+                <h3 class="role__company">Only</h3>
+                <p class="role__about">
+                  Продуктовое агентство из ТОП-10 России с более чем 180 отраслевыми наградами. Среди клиентов VK, СИБУР, Северсталь и MR Group.
+                </p>
+                <ul class="wins">
+                  <li>Спроектировала сайт, получивший награду <b>Awwwards</b>.</li>
+                  <li>Снизила количество ошибок, внедрив кросс-ревью и чек-листы проектирования.</li>
+                </ul>
+                <ul class="tasks">
+                  <li>Интернет-магазины, лендинги, корпоративные сайты и приложения в e-com, fintech, proptech, edtech и govtech</li>
+                  <li>Сложные B2B-платформы с множеством ролей и сценариев</li>
+                  <li>Защита решений перед заказчиками и C-Level</li>
+                  <li>Глубинные интервью и исследования на прототипах</li>
+                  <li>CJM, USM, User Flows и менторинг junior-дизайнера</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================ GALLERY (frames) ============================ -->
+      <section class="gallery" id="gallery">
+        <div class="shell">
+          <h2 class="section__head reveal">Примеры визуала</h2>
+        </div>
+        <div class="gallery__strip">
+          <figure class="frame frame--tall reveal" style="--i: 0">
+            <img src="https://picsum.photos/seed/frame-ui-241/720/960?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+          <figure class="frame frame--wide reveal" style="--i: 1">
+            <img src="https://picsum.photos/seed/frame-room-118/1040/720?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+          <figure class="frame frame--tall reveal" style="--i: 2">
+            <img src="https://picsum.photos/seed/frame-screen-77/720/960?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+          <figure class="frame frame--wide reveal" style="--i: 3">
+            <img src="https://picsum.photos/seed/frame-desk-509/1040/720?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+          <figure class="frame frame--tall reveal" style="--i: 4">
+            <img src="https://picsum.photos/seed/frame-proto-63/720/960?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+          <figure class="frame frame--wide reveal" style="--i: 5">
+            <img src="https://picsum.photos/seed/frame-board-302/1040/720?grayscale" alt="Кадр из работы" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================ CONTACT ============================ -->
+      <section class="contact" id="contact">
+        <div class="shell contact__inner">
+          <h2 class="contact__head reveal">Дизайн с фокусом<br />на бизнес-результат.</h2>
+          <a class="btn btn--solid btn--lg reveal" href="https://t.me/mmrialle" target="_blank" rel="noopener"> Написать в Telegram </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/core-renderer.js" defer></script>
+    <script src="js/hero-project.js" defer></script>
+    <script src="js/hero-gradient.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

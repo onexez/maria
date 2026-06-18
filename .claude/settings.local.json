@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:wibify.agency)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s \"https://api.github.com/repos/Leonxlnx/taste-skill/git/trees/main?recursive=1\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('\\\\n'.join\\(t['path'] for t in d.get\\('tree',[]\\) if t['path'].endswith\\('.md'\\) or 'skill' in t['path'].lower\\(\\)\\)\\)\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(pkill -f \".claude/serve.js\")",
+      "Bash(curl -sI \"http://localhost:4321/css/styles.css\")",
+      "Bash(mkdir -p \"/Users/mary/Downloads/site 2/.claude\")",
+      "WebFetch(domain:lukebaffait.fr)",
+      "Bash(curl -s https://lukebaffait.fr/)",
+      "Bash(curl -s https://lukebaffait.fr/styles/index.css?v=20260423-r12)",
+      "Bash(curl -s \"https://lukebaffait.fr/styles/index.css?v=20260423-r12\")",
+      "Bash(curl -s \"https://lukebaffait.fr/\")",
+      "Bash(curl -s \"https://lukebaffait.fr/js/index.js?v=20260423-r14\")",
+      "Bash(grep -i \"gradient\\\\|color\\\\|rgba\\\\|#[0-9a-fA-F]\\\\{3,6\\\\}\\\\|radial\\\\|glow\")",
+      "Bash(curl -s \"https://lukebaffait.fr/js/core-renderer.js\")",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "Bash(curl -s -L https://lukebaffait.fr/ -A \"Mozilla/5.0\" -o /tmp/luke.html)",
+      "Read(//tmp/**)",
+      "Bash(python3 -)",
+      "Bash(curl -s -L \"https://lukebaffait.fr/js/index.js?v=20260423-r14\" -A \"Mozilla/5.0\" -o luke-index.js)",
+      "Bash(curl -s -L \"https://lukebaffait.fr/assets/images/shader%20background/background.png\" -A \"Mozilla/5.0\" -o \"assets/images/shader background/background.png\")",
+      "Bash(cp /tmp/luke-core-renderer.js js/core-renderer.js)",
+      "Bash(cp /tmp/luke-hero-project.js js/hero-project.js)",
+      "Bash(curl -s -L \"https://lukebaffait.fr/styles/index.css?v=20260423-r12\" -A \"Mozilla/5.0\" -o luke-index.css)",
+      "Bash(grep -niE '\\\\.hero[ ,{.-]|hero-canvas|#hero' luke-index.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:8080/assets/images/shader%20background/background.png\")",
+      "Bash(grep -oE '.{80}data-cr-project[^\"]{0,40}' luke-core-renderer.js)",
+      "Bash(grep -oE '.{30}fetch\\\\\\([^\\)]{0,40}' luke-core-renderer.js)",
+      "Bash(grep -oE 'function D\\\\\\([^\\)]*\\\\\\)\\\\{.{0,400}' luke-core-renderer.js)",
+      "Bash(grep -oE '.{20}getAttribute\\\\\\(\"data-cr-project\"\\\\\\).{0,120}' luke-core-renderer.js)",
+      "Bash(grep -oE '.{10}data-cr-project-src\"\\\\\\).{0,160}' luke-core-renderer.js)"
+    ]
+  }
+}
