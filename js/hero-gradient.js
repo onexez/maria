@@ -2,7 +2,7 @@
    Мария · Hero gradient (hero-canvas)
    ------------------------------------------------------------
    Один-в-один с референсом lukebaffait.fr: исходная картинка-
-   градиент (assets/images/shader background/background.png)
+   градиент (assets/images/background.png)
    прогоняется через движок CoreRenderer с эффектами
    flow-field + blur + dither — точно тот же конфиг
    (window._heroProjectData из js/hero-project.js).
